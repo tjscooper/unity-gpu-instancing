@@ -61,7 +61,7 @@ public class Terrain_RockGenerator : MonoBehaviour
         // Rock
         if (bitmap.TerrainColor.Equals(pixelColor))
         {
-            currBatch.Add(new TerrainData(position, new Vector3(1, 1, 1), Quaternion.identity));
+            currBatch.Add(new TerrainData(position, new Vector3(1, 1, 5), Quaternion.identity));
         }
         
     }

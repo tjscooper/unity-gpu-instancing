@@ -11,7 +11,7 @@ public class PlayerHitDetection : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hitInfo;
 
-        if (Physics.Raycast(ray, out hitInfo, 1))
+        if (Physics.Raycast(ray, out hitInfo, 3))
         {
             Debug.DrawLine(ray.origin, hitInfo.point, Color.red);
             print(hitInfo.transform.gameObject.tag);
